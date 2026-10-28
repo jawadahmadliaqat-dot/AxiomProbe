@@ -1,0 +1,13 @@
+[package]
+name = "software-trust-layer"
+version = "0.1.0"
+edition = "2021"
+
+# SCAFFOLD ONLY — not compiled or tested on the development box
+# (no cargo/rustc there). See README.md in this directory.
+
+[dependencies]
+wasmtime = "24"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"

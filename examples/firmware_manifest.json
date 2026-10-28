@@ -1,0 +1,39 @@
+{
+  "_mock": true,
+  "_note": "MOCK input for Layer 3 development/testing. NOT produced by the real firmware-liberation-engine yet. Replace with Agent 1's real manifest.json at the Phase-1 handshake. sha256_hash IS the real SHA-256 of the committed examples/sample_firmware.bin (a test recomputes and asserts it), but that binary is itself simulated, and formal_proof_status is a simulated value - no Lean proof exists for this mock data.",
+  "forbidden_regions": [
+    [
+      "0x40022000",
+      "0x400223FF",
+      "FLASH_CONTROLLER"
+    ],
+    [
+      "0x50000000",
+      "0x500003FF",
+      "CRYPTO_ENGINE"
+    ]
+  ],
+  "formal_proof_status": "VERIFIED_LEAN4",
+  "sha256_hash": "e83252b25aa49690adfff1c82261f2ed1de3a1ea979618796be5e7924d28ebf7",
+  "target_architecture": "ARM_CORTEX_M3",
+  "verified_mmio_ranges": [
+    [
+      "0x40010C00",
+      "0x40010FFF",
+      "GPIOB_LED",
+      "read_write"
+    ],
+    [
+      "0x40013800",
+      "0x40013BFF",
+      "UART1",
+      "read_write"
+    ],
+    [
+      "0x40021000",
+      "0x400213FF",
+      "RCC",
+      "read"
+    ]
+  ]
+}
